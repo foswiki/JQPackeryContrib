@@ -1,3 +1,4 @@
+!noci
 data/System/JQPackeryContrib.txt 0644
 lib/Foswiki/Contrib/JQPackeryContrib/Config.spec 0644
 lib/Foswiki/Contrib/JQPackeryContrib/Core.pm 0644

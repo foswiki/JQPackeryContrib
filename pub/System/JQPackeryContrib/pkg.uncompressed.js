@@ -3423,20 +3423,25 @@ jQuery(function($) {
       $this.css('visibility', 'visible');//.hide().fadeIn();
     });
 
+    function finishInit() {
+      if (opts.draggable) {
+        $items = $($this.packery('getItemElements')).draggable();
+        $this.packery( 'bindUIDraggableEvents', $items );
+      }
+
+      $this.addClass("jqPackeryInited");
+    }
+
     if (opts.waitForImages) {
       $this.imagesLoaded(function() {
         $this.packery(opts);
+        finishInit();
       });
     } else {
       $this.packery(opts);
+      finishInit();
     }
 
-    if (opts.draggable) {
-      $items = $($this.packery('getItemElements')).draggable();
-      $this.packery( 'bindUIDraggableEvents', $items );
-    }
-
-    $this.addClass("jqPackeryInited");
   });
 });
 
