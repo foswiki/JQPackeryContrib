@@ -1,0 +1,13 @@
+git
+*.swp
+*,v
+*.gz
+/JQPackeryContrib.md5
+/JQPackeryContrib.sha1
+/JQPackeryContrib.tgz
+/JQPackeryContrib.txt
+/JQPackeryContrib.zip
+/JQPackeryContrib_installer
+/JQPackeryContrib_installer.pl
+pub/System/JQPackeryContrib/packery.js
+pub/System/JQPackeryContrib/pkg.js

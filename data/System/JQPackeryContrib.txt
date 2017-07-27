@@ -1,0 +1,156 @@
+%META:TOPICINFO{author="micha" comment="reprev" date="1480001662" format="1.1" reprev="2" version="2"}%
+---+!! %TOPIC%
+%$SHORTDESCRIPTION%
+
+%TOC%
+
+[[http://packery.metafizzy.co/][Packery]] is a <nop>JavaScript library and jQuery plugin that makes gapless and
+draggable layouts. It uses a bin-packing algorithm to fill in empty gaps.
+Packery layouts can be intelligently ordered or organically wild. Elements can
+be stamped in place, fit in a specific spot, or dragged around. It’s perfect
+for draggable dashboard and seamless Masonry image galleries.
+
+See also [[%SYSTEMWEB%.JQueryMasonry][JQueryMasonry]].
+
+---++ Usage
+
+---+++ <nop>JavaScript API
+
+Configuring Packery is fairly easy. Simply attach the =.packery()= method 
+to the wrapping container element in your jQuery script. Depending on the layout,
+you&#8217;ll most likely need to specify one option.
+
+For layouts with elements that span multiple widths:
+
+<verbatim class="js">
+$('#wrapper').packery({ 
+  itemSelector: '.grid-item',
+  gutter: 10 
+});
+</verbatim>
+
+---+++ Foswiki integration
+
+All containers classified as =jqPackery= will be processed by this plugin. Options can be specified
+using HTML5 data attributes.
+
+<verbatim class="tml">
+<div class="jqPackery" data-item-selector=".grid-item">
+   <div class="grid-item">...</div>
+   <div class="grid-item">...</div>
+   <div class="grid-item">...</div>
+...
+</div>
+</verbatim>
+
+---++ Examples
+%JQREQUIRE{"packery"}%
+%JQREQUIRE{"autocolor" warn="off"}%
+
+See more demos at http://packery.metafizzy.co/
+
+<div class="jqPackery" data-draggable="true" data-percent-position="true" data-gutter="10" data-item-selector='.grid-item' data-column-width=".grid-sizer">
+  <div class="grid-sizer"></div>
+  <div class="grid-item jqAutoColor">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+    Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna
+    nibh, viverra non, semper suscipit, posuere a, pede.
+  </div>
+  <div class="grid-item jqAutoColor">
+     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+     sit amet orci.
+  </div>
+  <div class="grid-item jqAutoColor">
+    Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
+    vehicula
+  </div>
+  <div class="grid-item jqAutoColor">
+    Suspendisse ac urna. Sit amet mi ullamcorper vehicula
+  </div>
+  <div class="grid-item jqAutoColor">
+    adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque
+    mauris ut lectus.
+  </div>
+  <div class="grid-item jqAutoColor">
+    Sit amet mi ullamcorper vehicula lacinia vel, tellus
+  </div>
+  <div class="grid-item jqAutoColor">
+    Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+  </div>
+  <div class="grid-item jqAutoColor">
+    Sit amet mi ullamcorper vehicula
+  </div>
+  <div class="grid-item grid-item-width2 jqAutoColor">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+    Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna.
+  </div>
+  <div class="grid-item jqAutoColor">
+     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+     sit amet orci.
+  </div>
+  <div class="grid-item jqAutoColor">
+    Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
+  </div>
+
+  <div class="grid-item jqAutoColor">
+    Etiam pellentesque maurislectus. adipiscing in, lacinia vel, tellus. Suspendisse ac urna.
+  </div>
+  <div class="grid-item jqAutoColor">
+    Sit amet mi ullamcorper vehicula dapibus eu, fermentum et, dapibus sed, urna
+  </div>
+  <div class="grid-item jqAutoColor">
+    Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+  </div>
+</div>
+
+<literal>
+<style type="text/css">
+.jqPackery {
+   visibility:hidden;
+}
+.grid-item,
+.grid-sizer {
+   width:10%;
+   box-sizing:border-box;
+   padding: 0.5em;
+}
+.grid-item {
+   background: #D8D5D2;
+   -moz-border-radius: 0.5em;
+   -webkit-border-radius: 0.5em;
+   border-radius: 0.5em;
+   cursor:move;
+}
+.grid-sizer {
+   width:11%;
+}
+.grid-item {
+   width:22%;
+}
+.grid-item-width2 {
+   width:44%;
+}
+</style>
+</literal>
+
+---++ Installation Instructions
+
+%$INSTALL_INSTRUCTIONS%
+
+---++ Dependencies
+%$DEPENDENCIES%
+
+---++ Change History
+
+| | |
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="MichaelDaum"}%
+%META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
+%META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
+%META:FIELD{name="Description" title="Description" value=""}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25$ROOTMODULE%25"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2016, MichaelDaum, All Rights Reserved"}%
+%META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
+%META:FIELD{name="Home" title="Home" value="http://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
+%META:FIELD{name="Support" title="Support" value="http://foswiki.org/Support/%25$ROOTMODULE%25"}%

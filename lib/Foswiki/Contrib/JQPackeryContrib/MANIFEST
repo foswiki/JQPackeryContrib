@@ -1,0 +1,13 @@
+data/System/JQPackeryContrib.txt 0644
+lib/Foswiki/Contrib/JQPackeryContrib/Config.spec 0644
+lib/Foswiki/Contrib/JQPackeryContrib/Core.pm 0644
+lib/Foswiki/Contrib/JQPackeryContrib/DEPENDENCIES 0644
+lib/Foswiki/Contrib/JQPackeryContrib.pm 0644
+pub/System/JQPackeryContrib/Makefile 0644
+pub/System/JQPackeryContrib/packery.init.uncompressed.js 0644
+pub/System/JQPackeryContrib/packery.js 0644
+pub/System/JQPackeryContrib/packery.js.gz 0644
+pub/System/JQPackeryContrib/packery.uncompressed.js 0644
+pub/System/JQPackeryContrib/pkg.js 0644
+pub/System/JQPackeryContrib/pkg.js.gz 0644
+pub/System/JQPackeryContrib/pkg.uncompressed.js 0644
