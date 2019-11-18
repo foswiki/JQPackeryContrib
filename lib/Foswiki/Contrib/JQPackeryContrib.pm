@@ -1,6 +1,6 @@
 # Extension for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# JQPackeryContrib is Copyright (C) 2017 Michael Daum http://michaeldaumconsulting.com
+# JQPackeryContrib is Copyright (C) 2017-2019 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,10 +18,8 @@ package Foswiki::Contrib::JQPackeryContrib;
 use strict;
 use warnings;
 
-use Foswiki::Func ();
-
-our $VERSION = '1.00';
-our $RELEASE = '27 Jul 2017';
+our $VERSION = '1.10';
+our $RELEASE = '18 Nov 2019';
 our $SHORTDESCRIPTION = 'Gapless, draggable grid layouts';
 our $NO_PREFS_IN_TOPIC = 1;
 

@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="micha" comment="reprev" date="1480001662" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1574082834" format="1.1"  version="1"}%
 ---+!! %TOPIC%
 %$SHORTDESCRIPTION%
 
@@ -104,7 +104,7 @@ See more demos at http://packery.metafizzy.co/
 </div>
 
 <literal>
-<style type="text/css">
+<style>
 .jqPackery {
    visibility:hidden;
 }
@@ -143,6 +143,8 @@ See more demos at http://packery.metafizzy.co/
 ---++ Change History
 
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  18 Nov 2019 | update to latest upstrea version of packery.js | 
+|  27 Jul 2019 | updated to latest upstream version of packery.js |
 |  27 Jul 2017 | initial release |
 
 %META:FORM{name="PackageForm"}%
@@ -151,7 +153,7 @@ See more demos at http://packery.metafizzy.co/
 %META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25$ROOTMODULE%25"}%
-%META:FIELD{name="Copyright" title="Copyright" value="2017, MichaelDaum, All Rights Reserved"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2017-2019, MichaelDaum, All Rights Reserved"}%
 %META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
 %META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%25$ROOTMODULE%25"}%

@@ -1,6 +1,6 @@
 # Extension for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# JQPackeryContrib is Copyright (C) 2017 Michael Daum http://michaeldaumconsulting.com
+# JQPackeryContrib is Copyright (C) 2017-2019 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -35,12 +35,12 @@ sub new {
   my $this = bless(
     $class->SUPER::new(
       name => 'JQPackeryContrib',
-      version => '2.1.1',
+      version => '2.1.2',
       author => 'Metafizzy',
       homepage => 'http://packery.metafizzy.co/',
       javascript => ['pkg.js'],
       puburl => '%PUBURLPATH%/%SYSTEMWEB%/JQPackeryContrib',
-      dependencies => ['livequery', 'imagesloaded', 'JQUERYPLUGIN::STARS'],
+      dependencies => ['imagesloaded', 'JQUERYPLUGIN::STARS'],
     ),
     $class
   );

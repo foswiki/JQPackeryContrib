@@ -1,6 +1,7 @@
 "use strict";
 jQuery(function($) {
   var defaults = {
+    layoutInstant: true,
     waitForImages: true
   };
 
