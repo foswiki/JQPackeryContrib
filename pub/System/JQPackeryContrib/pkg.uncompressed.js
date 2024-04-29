@@ -3423,10 +3423,10 @@ return Packery;
 jQuery(function($) {
   var defaults = {
     layoutInstant: true,
-    waitForImages: true
+    waitForImages: false
   };
 
-  $(".jqPackery:not(.jqPackeryInited)").livequery(function() {
+  $(".jqPackery").livequery(function() {
     var $this = $(this),
         opts = $.extend({}, defaults, $this.data()),
         $items;
@@ -3440,8 +3440,6 @@ jQuery(function($) {
         $items = $($this.packery('getItemElements')).draggable();
         $this.packery( 'bindUIDraggableEvents', $items );
       }
-
-      $this.addClass("jqPackeryInited");
     }
 
     if (opts.waitForImages) {

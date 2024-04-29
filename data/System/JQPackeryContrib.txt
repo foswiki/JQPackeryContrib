@@ -143,6 +143,7 @@ See more demos at http://packery.metafizzy.co/
 ---++ Change History
 
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  24 Apr 2024 | disabled =waitForImages= by default as it defeats native lazy loading of images |
 |  18 Nov 2019 | update to latest upstrea version of packery.js | 
 |  27 Jul 2019 | updated to latest upstream version of packery.js |
 |  27 Jul 2017 | initial release |
@@ -153,7 +154,7 @@ See more demos at http://packery.metafizzy.co/
 %META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25$ROOTMODULE%25"}%
-%META:FIELD{name="Copyright" title="Copyright" value="2017-2019, MichaelDaum, All Rights Reserved"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2017-2024, MichaelDaum, All Rights Reserved"}%
 %META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
 %META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%25$ROOTMODULE%25"}%
